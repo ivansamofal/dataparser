@@ -8,5 +8,5 @@ use app\ApiService;
 use app\AppService;
 use GuzzleHttp\Client;
 
-$appService = new AppService(new ApiService(new Client()));
+$appService = new AppService(new ApiService(new Client()));//todo DI
 echo implode("\n", $appService->execute($argv[1]));
